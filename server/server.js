@@ -6,7 +6,7 @@ import { Configuration, OpenAIApi } from "openai";
 dotenv.config();
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.get("/", async (req, res) => {
   res.status(200).send({
-    message: "Hello from CodeX!",
+    message: "Hello from backend!",
   });
 });
 
